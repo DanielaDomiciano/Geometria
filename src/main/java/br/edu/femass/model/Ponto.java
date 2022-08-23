@@ -59,4 +59,17 @@ public class Ponto {
 
     }
 
+    public String toString(){
+        return"(" + this.x.toString() + ", " + this.y.toString() + ")";
+    }
+
+    public boolean equals(Object object){
+        Ponto p = (Ponto) object;
+
+        if (p.getX().equals(this.x) && p.getY().equals(this.y)) return true;
+
+        return false;
+
+    }
+
 }

@@ -25,4 +25,16 @@ public class SegmentoReta {
     public Double getTamanho(){
         return this.getP1().getDistancia(this.getP2());
     }
+
+    public String toString(){
+        return this.getP1().toString() + ", " + this.getP2().toString();
+    }
+
+    public boolean equals (Object object){
+        SegmentoReta s =(SegmentoReta) object;
+
+        if (s.getP1(). equals(this.getP1()) && s.getP2().equals(this.getP2())) return true;
+        if (s.getP1(). equals(this.getP2()) && s.getP2().equals(this.getP1())) return true;
+        return false;
+    }
 }
